@@ -2,16 +2,34 @@ package CentroDeAdopcion;
 
 public class Gato {
     int edad, peso, id;
-    String nombre;
+    String nombre, raza, color;
 
     public Gato(){
 
     }
-    public Gato(int edad, int peso, int id, String nombre) {
+    public Gato(int edad, int peso, int id, String nombre, String raza, String color) {
         this.edad = edad;
         this.peso = peso;
         this.id = id;
         this.nombre = nombre;
+        this.raza = raza;
+        this.color = color;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getEdad() {
